@@ -1,0 +1,60 @@
+<div class="sticky -top-[5.3rem] sm:-top-[1.9rem] xl:top-16">
+    <p class="text-lg py-8 xl:py-0 -mx-4 sm:-mx-6 xl:-mx-6 -rotate-90 absolute top-[5.3rem]  xl:top-[8rem] xl:text-xl left-0 font-bold">CATEGORIES</p>
+    <div class="sm:flex sm:w-screen  xl:w-full xl:h-full">
+        <div class="sm:w-[50%] sm:h-[50%]">
+            <div class="w-full xl:h-[30%] ">
+                <img src="../../../assets/Rectangle 3844.png" class="w-full sm:h-full xl:h-[30%] object-cover" alt="">
+            </div>
+            <div class="absolute top-[330px] xl:top-[520px]  px-2 w-full sm:w-[50%] h-14">
+                <div class="flex justify-between items-center mx-auto">
+                    <div class="">
+                        <button (click)="showPre()" class="bg-green-800 fill-white rounded-full px-4 py-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" class="rotate-180" viewBox="0 0 320 512">
+                            <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-row items-center w-[78%] text-sm xl:text-lg">
+                        <div *ngFor="let text of displayedTexts" class="mx-auto">
+                          <div class="bg-transparent font-semibold text-center ">
+                            <a href="">{{ text }}</a>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="fill-white">
+                          <button (click)="showNext()" class="bg-green-800 text-white rounded-full px-4 py-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                          </button>
+                      </div>
+        
+                </div>
+            </div>
+        </div>
+        <div class="sm:w-[50%]">
+            <div class="sm:h-[50%] xl:h-[65%]">
+                <img src="../../../assets/Rectangle 3085.png" class="w-full sm:h-full" alt="">
+            </div>
+            <div class="absolute top-[410px] sm:top-0  xl:flex xl:flex-col xl:items-center xl:justify-between">
+                <div class="text-white w-[90%] mx-auto p-6">
+                    <h1 class="text-xl font-bold py-2 sm:py-1 sm:text-lg sm:font-semibold xl:text-2xl xl:font-bold">ALUMINIUM FOIL</h1>
+                    <p class="text-lg py-2 sm:text-sm xl:text-xl">These are thin sheets of metal that can be used to wrap food items, cover dishes, line baking trays and form containers. Aluminium foil can withstand high temperatures and keep food fresh for longer.</p>
+                    <div class="py-2  xl:pb-8">
+                        <div class="flex justify-center xl:justify-center items-center p-4 w-[63%] sm:w-[50%] xl:w-[28%] cursor-pointer sm:p-2 bg-[#7DC242] text-[white] rounded-lg" >
+                            <div class="sm:text-sm xl:text-sm pl-1 xl:pl-1">VIEW PRODUCTS</div>
+                            <div class="px-2 sm:px-2 xl:pl-[6px] fill-[white]"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full">
+                    <div class="w-[50%] ">
+                        <img src="../../../assets/AdobeStock_125431824.png" class="h-[18vh] sm:h-[45vh] w-full" alt="">
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="../../../assets/AdobeStock_125431824-1.png" class="h-[18vh] sm:h-[45vh] w-full object-cover"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

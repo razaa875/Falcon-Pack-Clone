@@ -1,0 +1,19 @@
+<div class="h-full w-full sticky top-20 bg-white xl:h-screen xl:top-16">
+    <p class="text-lg py-8 xl:py-0 -mx-16 sm:-mx-14 xl:-mx-14 -rotate-90 absolute top-[5.3rem]  xl:top-[8rem] xl:text-xl left-0 font-bold">INDUSTRIES WE SERVE</p>
+    <div class="w-[85%] sm:w-[80%] xl:w-[90%] ml-auto xl:ml-auto sm:ml-16 py-4 pr-6 xl:h-[83vh]">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let items of cards">
+                <div class="relative sm:p-2 xl:p-4">
+                    <img src="{{items.image}}" class="w-full from-transparent to-white" alt="">
+                </div>
+                <div class="p-4">
+                    <h1 class="Gotham font-bold text-xl pb-2">{{items.title}}</h1>
+                    <p class="text-lg w-[90%]  pb-2">{{items.desc}}</p>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="mx-auto w-[80%] pb-4 xl:mx-0 xl:flex xl:justify-end xl:w-full xl:pr-10 sm:pt-4">
+        <img src="../../../assets/Group 8070.svg" class="" alt="">
+    </div>
+</div>

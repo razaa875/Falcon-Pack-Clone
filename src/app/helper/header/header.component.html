@@ -1,0 +1,140 @@
+<div class="bg-black sticky top-0 z-[95] xl:hidden" >
+    <div class="py-4 flex items-center xl:flex-row ">
+        <div class="w-1/5 ml-4 xl:hidden"  (click)="openMenu()">
+            <div class="rounded-full bg-[#FFFFFF]/50 w-10 h-10 flex justify-center items-center">
+                <svg _ngcontent-sxx-c103="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="white" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="w-[70%] sm:w-[58%] xl:w-[70%]">
+            <img src="../../../assets/logo.png" class="w-[50%] sm:w-[20%] mx-auto cursor-pointer"  routerLink=""  alt="">
+        </div>
+    </div>
+    <div class="xl:hidden sm:hidden sticky bg-black w-full flex justify-between flex-col sm:text-[10px] text-[14px] font-bold  transition-all ease-in-out" *ngIf="menuVariable">
+        <div class="">
+            <div class="flex items-center justify-center">
+                <h1 class="text-white cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]">ABOUT US</h1>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" class="fill-[white]" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+            </div>
+            <h1 class="text-white cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]">CATEGORIES</h1>
+            <h1 class="text-white cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]">INDUSTRY WE SERVE</h1>
+            <h1 class="text-white cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]">FACILITIES</h1>
+            <h1 class="text-[WHITE] cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]" routerLink="sustainability" (click)="toggleNav()">SUSTAINABILITY</h1>
+            <h1 class="text-[WHITE] cursor-pointer py-4 text-center px-2 hover:text-[#79BB40]">CONTACT</h1>
+            <div class="flex items-center justify-center gap-3 py-5">
+                <div class="flex items-center rounded-full px-3 py-3 w-[50%] bg-white/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="white" class="w-4 h-4 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                    </svg>
+                    <input type="search" class="bg-transparent mr-0 outline-none text-white text-xs w-full"
+                        placeholder="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-white/50" height="1em" viewBox="0 0 512 512">  <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                </div>
+                <div class=" bg-white/30 rounded-full px-3 py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" class="fill-white/50" viewBox="0 0 512 512">  <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </div>
+            </div>
+            <div class="flex justify-center items-center flex-col pt-5 pb-10 gap-1">
+                <h1 class="text-white">Language</h1>
+                <div>
+                    <div class="relative w-14 h-6 m-auto bg-gray-500 rounded-full cursor-pointer flex items-center justify-between">
+                        <div class="absolute left-[34px] text-gray-300 text-xs">
+                            ar
+                        </div>
+                        <div
+                            class="absolute bg-white flex h-full items-center justify-center px-2 rounded-full text-xs uppercase left-0">
+                            en
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden sm:block xl:hidden sticky top-[4.5rem] z-[95] bg-black" *ngIf="menuVariable">
+    <div class="flex justify-between items-center sm:flex-wrap sm:justify-center sm:pb-4 w-[95%] sm:w-full mx-auto">
+        <div class="w-[10%] sm:hidden xl:hidden">
+            <img src="../../../assets/logo.png" class="w-[80%] mx-auto cursor-pointer" alt="">
+        </div>
+        <div class="flex justify-between w-[60%] sm:px-4 sm:w-full text-[14px] font-bold">
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">OUR COMPANY</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">CATEGORIES</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">INDUSTRY WE SERVE</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">FACILITIES</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]"  routerLink="sustainability" (click)="toggleNav()">SUSTAINABILITY</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">CONTACT</h1>
+        </div>
+        <div class="ml-14">
+            <div class="flex items-center rounded-full px-3 py-3 w-full bg-white/30">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="white" class="w-4 h-4 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                </svg>
+                <input type="search" class="bg-transparent mr-0 outline-none text-white text-xs w-full"
+                    placeholder="Search">
+            </div>
+        </div>
+        <div class="flex justify-between items-center flex-col w-[10%] gap-1">
+            <h1 class="text-white">Language</h1>
+            <div>
+                <div class="relative w-14 h-6 m-auto bg-gray-500 rounded-full cursor-pointer flex items-center justify-between">
+                    <div class="absolute left-[34px] text-gray-300 text-xs">
+                        ar
+                    </div>
+                    <div
+                        class="absolute bg-white flex h-full items-center justify-center px-2 rounded-full text-xs uppercase left-0">
+                        en
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden sm:hidden xl:block sticky top-0 z-[95] bg-black">
+    <div class="flex justify-between items-center w-[95%] mx-auto">
+        <div class="w-[10%]  xl:block">
+            <img src="../../../assets/logo.png" class="w-[80%] mx-auto cursor-pointer" routerLink="" alt="">
+        </div>
+        <div class="flex justify-between w-[60%]  text-[14px] font-bold">
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">OUR COMPANY</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">CATEGORIES</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">INDUSTRY WE SERVE</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">FACILITIES</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]"  routerLink="sustainability" (click)="toggleNav()">SUSTAINABILITY</h1>
+            <h1 class="text-white cursor-pointer py-6 text-center px-2 hover:text-[#79BB40]">CONTACT</h1>
+        </div>
+        <div class="ml-14">
+            <div class="flex items-center rounded-full px-3 py-3 w-full bg-white/30">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="white" class="w-4 h-4 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                </svg>
+                <input type="search" class="bg-transparent mr-0 outline-none text-white text-xs w-full"
+                    placeholder="Search">
+            </div>
+        </div>
+        <div class="flex justify-between items-center flex-col w-[10%] gap-1">
+            <h1 class="text-white">Language</h1>
+            <div>
+                <div class="relative w-14 h-6 m-auto bg-gray-500 rounded-full cursor-pointer flex items-center justify-between">
+                    <div class="absolute left-[34px] text-gray-300 text-xs">
+                        ar
+                    </div>
+                    <div
+                        class="absolute bg-white flex h-full items-center justify-center px-2 rounded-full text-xs uppercase left-0">
+                        en
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

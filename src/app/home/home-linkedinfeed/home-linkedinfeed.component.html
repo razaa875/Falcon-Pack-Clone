@@ -1,0 +1,19 @@
+<div class="h-full w-full sticky bg-white xl:h-screen pb-8">
+    <p class="text-lg py-8 xl:py-0 -mx-8 sm:-mx-8 xl:-mx-2 -rotate-90 absolute top-[5.3rem]  xl:top-[8rem] xl:text-xl left-0 font-bold">LINKEDIN FEED</p>
+    <div class="w-[85%] sm:w-[80%] xl:w-[90%] ml-auto xl:ml-auto sm:ml-16 py-4 xl:pt-24 pr-6">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let items of cards">
+                <div class="relative sm:p-2 ">
+                    <img src="{{items.image}}" class="w-full from-transparent to-white" alt="">
+                </div>
+                <div class="p-4">
+                    <h1 class="Gotham font-bold text-xl pb-2">{{items.title}}</h1>
+                    <p class="text-lg w-[90%]  pb-2">{{items.desc}}</p>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="mx-auto w-[80%] pb-4 sm:pt-4">
+        <img src="../../../assets/Group 8070.svg" alt="">
+    </div>
+</div>

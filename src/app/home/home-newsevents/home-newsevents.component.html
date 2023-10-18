@@ -1,0 +1,92 @@
+<div class="sticky top-5 sm:-top-[30rem] xl:top-5">
+    <div class="w-full h-screen xl:h-screen sm:h-[160vh] bg-white">
+        <p class="text-lg py-14 xl:py-0 -mx-10 sm:-mx-6 xl:-mx-10 -rotate-90 absolute top-[5.3rem]  xl:top-[8rem] xl:text-xl left-0 font-bold">NEWS & EVENTS</p>
+        <div class="sm:hidden">
+            <div class="pt-8 sm:basis-1/3">
+                <div class="hidden h-[60vh] sm:h-full sm:w-full w-[80%] ml-14 sm:ml-16 bg-[#D8EDC6] rounded-2xl  cursor-pointer">
+                    <div class="relative">
+                        <img src="../../../assets/Rectangle 2738-2.png" class="w-full" alt="">
+                    </div>
+                    <div class="absolute top-36 ml-32">
+                        <div class="rounded-full bg-white p-4 text-lg flex justify-center items-center fill-[#418B52]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-4">
+                        <p class="text-[#418B52] font-semibold">23 - Nov - 2023</p>
+                        <h1 class="font-bold text-lg pb-2">Plantation Drive - Each one Plant one</h1>
+                        <p class="text-sm w-[95%] pb-2">Tree plantation is a necessity to protect our environment against pollution and global warming. Falcon Pack.</p>
+                        <p class="text-[#418B52] font-bold cursor-pointer w-[40%]">READ MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-16 sm:w-[70%] w-[90%] ml-auto">
+                <owl-carousel-o [options]="customOptions"> 
+                <ng-template carouselSlide *ngFor="let items of cards">
+                        <div>
+                            <div class="h-[65vh] sm:h-full sm:w-full w-[80%] ml-11 sm:mt-10 sm:ml-20  rounded-2xl  cursor-pointer">
+                                <div class="relative">
+                                    <img src="{{items.image}}" class="w-full from-transparent to-white" alt="">
+                                </div>
+                                <div class="absolute top-36 ml-32">
+                                    <div class="rounded-full bg-white p-4 text-lg flex justify-center items-center fill-[#418B52]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="p-6 pt-4">
+                                    <p class="text-[#418B52] font-semibold">23 - Nov - 2023</p>
+                                    <h1 class="font-bold text-lg sm:text-sm pb-2">{{items.title}}</h1>
+                                    <p class="text-sm w-[95%] sm:text-xs pb-2">{{items.desc}}</p>
+                                    <p class="text-[#418B52] font-bold cursor-pointer w-[40%]">READ MORE</p>
+                                </div>
+                            </div>
+                        </div>
+                </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <div class="w-[90%] ml-auto justify-between gap-3 hidden sm:flex xl:flex-row-reverse xl:mr-auto">
+            <div class="w-[40%] xl:h-full xl:w-[25%] py-1 bg-[#D8EDC6] rounded-2xl mt-4">
+                <div class="p-2">
+                    <div class="relative">
+                        <img src="../../../assets/Rectangle 2738-2.png" class="w-full" alt="">
+                    </div>
+                    <div class="absolute top-36 ml-32">
+                        <div class="rounded-full bg-white p-4 text-lg flex justify-center items-center fill-[#418B52]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </div>
+                    <div class="p-2 pt-4">
+                        <p class="text-[#418B52] font-semibold">23 - Nov - 2023</p>
+                        <h1 class="font-bold text-lg pb-2">Plantation Drive - Each one Plant one</h1>
+                        <p class="text-sm w-[95%] pb-2">Tree plantation is a necessity to protect our environment against pollution and global warming. Falcon Pack.</p>
+                        <p class="text-[#418B52] text-sm font-bold cursor-pointer w-[50%]">READ MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[60%] xl:w-[73%] py-6">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let items of cards">
+                        <div class="relative">
+                            <img src="{{items.image}}" class="w-full p-4 from-transparent to-white" alt="">
+                        </div>
+                        <div class="absolute top-28 ml-32">
+                            <div class="rounded-full bg-white p-4 text-lg flex justify-center items-center fill-[#418B52]">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-4">
+                            <p class="text-[#418B52] text-sm font-semibold">23 - Nov - 2023</p>
+                            <h1 class="font-bold text-sm pb-2">{{items.title}}</h1>
+                            <p class="text-sm w-[95%]  pb-2">{{items.desc}}</p>
+                            <p class="text-[#418B52] text-sm font-bold cursor-pointer w-[50%]">READ MORE</p>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <div class="mx-auto w-[80%] xl:mx-0 xl:pl-24 sm:pt-4">
+            <img src="../../../assets/Group 8070.svg" alt="">
+        </div>
+    </div>
+</div>
